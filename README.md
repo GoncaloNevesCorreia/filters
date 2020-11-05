@@ -1,3 +1,3 @@
-# filters
+# Image Filters
 
 https://imgfilters.netlify.app/
