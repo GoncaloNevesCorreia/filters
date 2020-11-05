@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Filters</title>
+	<link rel="stylesheet" href="./style.css">
+	<script defer type="module" src="./app.js"></script>
+</head>
+
+<body>
+
+
+
+	<div id="fotos">
+
+		<img src="http://farm5.static.flickr.com/4505/37160534023_d9f59f64fc_s.jpg" alt="Hang Time">
+		<img src="http://farm5.static.flickr.com/4493/37877714451_778dfba770_s.jpg" alt="Autumnal serenity">
+		<img src="http://farm5.static.flickr.com/4486/37170347314_0c32da66bd_s.jpg" alt="Back Wash">
+		<img src="http://farm5.static.flickr.com/4467/37852323362_098faa52c9_s.jpg"
+			alt="Macro Mondays - Spiral - Filament Wire (In Explore 24th October 2017)">
+		<img src="http://farm5.static.flickr.com/4474/37822082776_12e163702d_s.jpg" alt="Slinky Spiral">
+		<img src="http://farm5.static.flickr.com/4469/37872649641_9cf2673ee4_s.jpg" alt="Lunatic tea spoons - HMM">
+		<img src="http://farm5.static.flickr.com/4447/37834871186_e026d44108_s.jpg" alt="Snail Chomping">
+		<img src="http://farm5.static.flickr.com/4484/37842604852_be78c6ab8a_s.jpg" alt="Macro Mondays - Spiral">
+		<img src="http://farm5.static.flickr.com/4445/37172740104_2607d05083_s.jpg"
+			alt="The Portal...  Macro Monday Spiral">
+		<img src="http://farm5.static.flickr.com/4503/37869501931_7645923656_s.jpg"
+			alt="Measuring Up (Explore 10-23-2017)">
+		<img src="http://farm5.static.flickr.com/4508/37848299922_33e51f7e6b_s.jpg"
+			alt="B787 Dreamliner - Air Europa (2017)">
+		<img src="http://farm5.static.flickr.com/4455/37822793976_935e17977d_s.jpg" alt="Rhumb Line on Blue">
+		<img src="http://farm5.static.flickr.com/4511/37830027546_60ce1bf91e_s.jpg" alt="Two simple spirals">
+		<img src="http://farm5.static.flickr.com/4491/37613296130_bfcfbe285c_s.jpg" alt="Fern spirals">
+		<img src="http://farm5.static.flickr.com/4501/24030723858_d2da8e3e7a_s.jpg" alt="Macro Mondays - Spiral">
+		<img src="http://farm5.static.flickr.com/4476/37830129516_77f7471874_s.jpg"
+			alt="Spiralled Sweetness Explored, many thanks.">
+		<img src="http://farm5.static.flickr.com/4466/37613354800_af0fbdd70d_s.jpg" alt="Spiral">
+		<img src="http://farm5.static.flickr.com/4453/37883320711_8472f19a99_s.jpg"
+			alt="Sunrise Reflection in the Mist">
+		<img src="http://farm5.static.flickr.com/4488/37842008902_a3a3c85217_s.jpg" alt="Spiral">
+		<img src="http://farm5.static.flickr.com/4478/24038308428_36f5c73af9_s.jpg" alt="Spiral">
+		<img src="http://farm5.static.flickr.com/4471/37617951650_108644c771_s.jpg"
+			alt="Spiral copybook (MacroMondays)">
+		<img src="http://farm5.static.flickr.com/4508/37852396512_8986660230_s.jpg" alt="alter schaumschläger">
+	</div>
+
+	<div class="wrapper">
+		<div id="filtros">
+			<div class="div_filtros">
+				
+				<div>
+					<input type="checkbox" id="grayscale">
+					<label>Escala de Cinzentos</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_grayscale">
+					<label id="value_grayscale"></label>
+				</div>
+
+
+				<div>
+					<input type="checkbox" id="sepia">
+					<label>Sepia</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_sepia">
+					<label id="value_sepia"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="saturate">
+					<label>Saturate</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_saturate">
+					<label id="value_saturate"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="hue_rotate">
+					<label>Hue Rotate</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_hue_rotate">
+					<label id="value_hue_rotate"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="invert">
+					<label>Invert</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_invert">
+					<label id="value_invert"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="opacity">
+					<label>Opacidade</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_opacity">
+					<label id="value_opacity"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="brightness">
+					<label>Brilho</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_brightness">
+					<label id="value_brightness"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="contrast">
+					<label>Contraste</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_contrast">
+					<label id="value_contrast"></label>
+				</div>
+
+				<div>
+					<input type="checkbox" id="blur">
+					<label>Blur</label>
+				</div>
+				<div class="hide">
+					<input type="range" min="1" max="100" class="slider" id="slider_blur">
+					<label id="value_blur"></label>
+				</div>
+			</div>
+			<!--
+				<input type="checkbox" id="dropShadow">
+				<label>Drop Shadow</label>
+				<input type="checkbox" id="svgFilter">
+				<label>SVG Filter</label>
+			-->
+
+			<div class="div_sliders">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+
+		<div id="destaque">
+	
+			<img id="big" alt="foto seleccionada em tamanho grande">
+		</div>
+
+	</div>
+</body>
+
+</html>
